@@ -7,7 +7,6 @@ const pixService = {
       const { data } = await bancoCentralApi.post('/pix/validate', { pixKey, amount });
       return data;
     } catch (error) {
-      console.error('Erro ao validar chave PIX:', error);
       throw error;
     }
   },
